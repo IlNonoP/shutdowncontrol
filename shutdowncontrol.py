@@ -26,7 +26,7 @@ def main():
         print("Usage:")
         print("shoutdowncontrol [arg] ")
         print("                    |-  start [port]                   This command start the server at the specified port")
-        print("                    |            |_ port  ex: 5000     This number is the number of the port you will send the requests")
+        print("                    |            |_ port  ex: 5000     (OPTIONAL!) (Default=5000) This number is the number of the port you will send the requests")
         print("                    |-  watch                          This command is used for verify if there are any file lock. The program will continue only if tyhere isn't any lock, if tehere are any lock the program will not continue")
         print("                    |_  help                           Show this guide")
     else:
