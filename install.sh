@@ -12,8 +12,7 @@ sudo chmod +x /usr/local/bin/shutdowncontrol
 mkdir /opt/shutdowncontrol
 mkdir /opt/shutdowncontrol/lock_file
 mv * /opt/shutdowncontrol
-chmod -R 777 /opt/shutdowncontrol
-
+sudo chmod -R 777 /opt/shutdowncontrol
 cd ..
 echo Final cleaning...
 rm -rf shutdowncontrol
