@@ -10,6 +10,7 @@ echo Installation...
 mv shutdowncontrol /usr/local/bin/shutdowncontrol
 sudo chmod +x /usr/local/bin/shutdowncontrol
 mkdir /opt/shutdowncontrol
+mkdir /opt/shutdowncontrol/lock_file
 mv * /opt/shutdowncontrol
 cd ..
 echo Final cleaning...
