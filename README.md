@@ -16,7 +16,7 @@ wget https://github.com/IlNonoP/shutdowncontrol/blob/main/install.sh && bash ins
 ## Uninstallation
 For a quick uninstallation just use the script given, use this command to download and run it, or download it from the repository
 ```bash
-wget https://github.com/IlNonoP/shutdowncontrol/blob/main/uninstall.sh && bash install.sh
+wget https://github.com/IlNonoP/shutdowncontrol/blob/main/uninstall.sh && bash uninstall.sh
 ```
 
 ## Usage
