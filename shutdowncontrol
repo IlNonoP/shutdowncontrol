@@ -1,2 +1,2 @@
 #!/bin/bash
-python3 shutdowncontrol.py "$@"
+python3 /opt/shutdowncontrol/shutdowncontrol.py "$@"
