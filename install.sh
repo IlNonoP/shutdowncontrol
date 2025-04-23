@@ -5,6 +5,7 @@ echo First leaning
 rm LICENSE 
 rm README.md  
 rm -rf .git
+rm *.sh
 echo Installation...
 mv shutdowncontrol /usr/local/bin/shutdowncontrol
 sudo chmod +x /usr/local/bin/shutdowncontrol
