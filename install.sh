@@ -14,3 +14,4 @@ cd ..
 echo Final cleaning...
 rm -rf shutdowncontrol
 echo Finished!!!
+rm install.sh
