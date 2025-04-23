@@ -13,10 +13,10 @@ try:
 except:
     port = 5000
 
-os.system("rm "+path+"lock_file/*")
+os.system("remove "+path+"lock_file/*")
 
 try:
-    os.makedirs(path+"lock_file")
+    os.system(f"mkdir {path}lock_file")
 except:
     print("Direcory already exist")
 
