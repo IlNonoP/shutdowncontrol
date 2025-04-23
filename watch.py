@@ -1,5 +1,5 @@
 import os
-path="/home/samuobe/Scrivania/Programmi/ShutdownController/programma_base/"
+path="/opt/shutdowncontrol/"
 
 try:
     os.makedirs(path+"lock_file")
