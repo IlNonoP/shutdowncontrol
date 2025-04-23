@@ -1,16 +1,16 @@
 import os
-path="/opt/shutdowncontrol/"
+path="/home/samuobe/Scrivania/Programmi/ShutdownController/programma_base/"
 
-while True:
-    try:
-        file = os.listdir(path+"lock_file/")
-        if os.listdir(path+"lock_file/") == []:
-            print("No lock file found")
-            break
-        else:
-            print("Locked file found")
-    except:
-        pass
+try:
+    os.makedirs(path+"lock_file")
+except:
+    print("Direcory already exist")
     
+while True:
+    if os.listdir(path+"lock_file/") == []:
+        print("No lock file found")
+        break
+    else:
+        print("Locked file found")
     os.system("sleep 1")
 print("shoutdowncontroller terminate\n")
