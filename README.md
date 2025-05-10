@@ -5,6 +5,7 @@ This is a small CLI program that allows a script to be prevented from continuing
 - Blocking by curl request
 - Unlocking by curl request
 - Supports multiple blocks simultaneously
+- Support for password verification to avoid unwanted locks or unlocks
 
 ## Installation
 For a quick installation just use the script given, use this command to download and run it, or download it from the repository
