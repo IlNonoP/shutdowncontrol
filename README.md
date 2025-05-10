@@ -31,19 +31,26 @@ to start it up. To choose a port other than the default (5000) you can specify i
 ```bash
 shutdowncontrol start 3004
 ```
+If you want to set a password to send lock or unlock requests add ```p=[password]```, in this example pippo will be used as the password
+
+```bash
+shutdowncontrol start p=pippo
+```
+
 
 ### Send request
 Curl can be used to send lock and unlock requests.
 
 To send blocking requests, it is necessary to use
 ```bash
-curl -d "action=[lock/unlock]" -d "data=[id]" http(s)://[address]:[port]/     
+curl -d "action=[lock/unlock]" -d "data=[id]" -d "password=[password]" http(s)://[address]:[port]/     
 ```
 The varible data in this command are:
 - [lock/unlock] = Based on whether you want to send a lock (lock) or unlock (unlock) request
 - [id] = Chosen by the user, it is used to identify the blocking request and remove the specific one
 - [address] = Server address *
 - [port] = Server port *
+- [password] = Optional, but increases security. Note that it is necessary to write the password attached to the equal and the p. In case there is no password you can directly remove this part ```-d ”password=[password]“```
 
 *In case you do not know where to find this data, it is shown when the server starts up
 
